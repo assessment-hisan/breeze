@@ -144,7 +144,16 @@ const Navbar = () => {
             </NavLink>
           )}
         </div>
+        
       ))}
+      <div className="flex items-center justify-center px-4 py-2  space-x-3">
+            <NavLink to="/contact" className="py-2 block" onClick={() => setIsMenuOpen(false)}>
+              Contact Us
+            </NavLink>
+            <NavLink to="/about" className="py-2 block" onClick={() => setIsMenuOpen(false)}>
+              About Us
+            </NavLink>
+          </div>
     </div>
   </div>
 )}

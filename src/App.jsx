@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 
 import New from "./components/helo/New";
@@ -24,6 +25,7 @@ function App() {
     <Route path="/contact" element={<Contact />} />
     <Route path="/about" element={<About />} />
     </Routes>
+    <Footer/>
     </Router>
   )
 }
