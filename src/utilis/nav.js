@@ -5,8 +5,8 @@ const createDropdown = (prefix) => [
 ];
 
 const nav = [
-  { id: 1, text: "Home" },
-  { id: 2, text: "Brands" },
+  { id: 1, text: "Home", link : "/"},
+  { id: 2, text: "Brands",link:"brands"},
   { id: 3, text: "Women", dropdown: createDropdown("women") },
   { id: 4, text: "Men", dropdown: createDropdown("men") },
   { id: 5, text: "Kids", dropdown: createDropdown("kids") },
@@ -16,3 +16,4 @@ const nav = [
 ];
 
 export default nav;
+

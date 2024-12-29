@@ -7,7 +7,6 @@ import nav from "../utilis/nav.js";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
-  const [timeoutId, setTimeoutId] = useState(null);
   const location = useLocation();
 
   // Handle dropdown opening/closing
@@ -15,26 +14,21 @@ const Navbar = () => {
     setOpenDropdown(openDropdown === id ? null : id);
   };
 
-  // Smooth close for dropdown
-  const handleMouseLeave = (id) => {
-    const idTimeout = setTimeout(() => {
-      if (openDropdown === id) {
-        setOpenDropdown(null);
-      }
-    }, 300);
-    setTimeoutId(idTimeout);
-  };
-
-  const handleMouseEnter = (id) => {
-    if (timeoutId) clearTimeout(timeoutId);
-    setOpenDropdown(id);
-  };
-
   // Helper function to check active state
   const isActive = (path) => location.pathname.startsWith(path);
 
-  return (
-    <div className="bg-white drop-shadow-sm">
+  // Close menu and handle dropdown logic
+  const handleNavItemClick = (id, dropdown) => {
+    if (!dropdown) {
+      setIsMenuOpen(false);
+      setOpenDropdown(null);
+    } else {
+      handleDropdown(id);
+    }
+  };
+
+  return ( 
+    <div className="relative z-10 bg-white drop-shadow-sm">
       <div className="flex justify-between items-center p-4">
         {/* Logo */}
         <div>
@@ -42,13 +36,13 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex justify-center items-center gap-6 font-semibold text-lg ">
+        <div className="hidden lg:flex flex-wrap justify-center items-center gap-6 font-semibold text-lg">
           {nav.map(({ id, text, dropdown }) => (
             <div
               key={id}
               className="relative group"
-              onMouseEnter={() => dropdown && handleMouseEnter(id)}
-              onMouseLeave={() => dropdown && handleMouseLeave(id)}
+              onMouseEnter={() => dropdown && setOpenDropdown(id)}
+              onMouseLeave={() => dropdown && setOpenDropdown(null)}
             >
               <NavLink
                 to={text === "Home" ? "/" : `/${text.toLowerCase()}`}
@@ -61,10 +55,8 @@ const Navbar = () => {
                 {text}
                 {dropdown && <AiFillCaretDown className="text-sm" />}
               </NavLink>
-
-              {/* Dropdown Menu */}
               {dropdown && openDropdown === id && (
-                <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md w-40 transition-all opacity-100 z-10">
+                <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md w-40 z-10">
                   {dropdown.map((item, index) => (
                     <NavLink
                       key={index}
@@ -80,10 +72,9 @@ const Navbar = () => {
               )}
             </div>
           ))}
-          {/* Contact and About Us Links */}
-          
         </div>
-        <div className="px-4 py-2 flex-center space-x-3">
+
+        <div className="hidden lg:flex items-center justify-center px-4 py-2  space-x-3">
             <NavLink to="/contact" className="py-2 block">
               Contact Us
             </NavLink>
@@ -94,54 +85,74 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle */}
         <div className="lg:hidden flex items-center">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          <button onClick={() => setIsMenuOpen(true)}>
+            <FaBars size={24} />
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-white shadow-md">
-          {nav.map(({ id, text, dropdown }) => (
-            <div key={id} className="relative group border-b">
+  <div className="absolute top-0 left-0 w-full h-full bg-white shadow-lg  flex flex-col transition-transform">
+    {/* Header */}
+    <div className="bg-white flex justify-between items-center p-4 border-b">
+      <img src="/logo.png" alt="Logo" className="h-12" />
+      <button onClick={() => setIsMenuOpen(false)}>
+        <FaTimes size={24} />
+      </button>
+    </div>
+
+    {/* Navigation Items */}
+    <div className="bg-white flex flex-col p-4 space-y-4">
+      {nav.map(({ id, text, link, dropdown }) => (
+        <div key={id}>
+          {dropdown ? (
+            // Items with dropdown
+            <>
               <div
-                className="flex justify-between items-center px-4 py-2"
-                onClick={() => dropdown && handleDropdown(id)}
+                className="flex justify-between items-center px-4 py-2 border-b cursor-pointer"
+                onClick={() => handleNavItemClick(id, dropdown)}
               >
-                <span className={isActive(`/${text.toLowerCase()}`) ? "text-gray-500 font-bold" : ""}>
+                <span className={isActive(link) ? "text-gray-500 font-bold" : ""}>
                   {text}
                 </span>
-                {dropdown && <AiFillCaretDown className="text-sm" />}
+                <AiFillCaretDown className="text-sm" />
               </div>
-              {dropdown && openDropdown === id && (
+              {openDropdown === id && (
                 <div className="bg-gray-50">
                   {dropdown.map((item, index) => (
                     <NavLink
                       key={index}
                       to={`/${item.link}`}
-                      className={`block px-6 py-2 hover:bg-gray-100 ${
-                        isActive(`/${item.link}`) ? "bg-gray-200" : ""
-                      }`}
+                      className={`block px-6 py-2 hover:bg-gray-100 ${isActive(`/${item.link}`) ? "bg-gray-200" : ""}`}
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       {item.text}
                     </NavLink>
                   ))}
                 </div>
               )}
-            </div>
-          ))}
-          {/* Contact and About Us Links */}
-          <div className="px-4 py-2 border-t">
-            <NavLink to="/contact" className="py-2 block">
-              Contact Us
+            </>
+          ) : (
+            // Direct links (e.g., Home, Brands)
+            <NavLink
+              to={link}
+              className={`block px-4 py-2 border-b ${isActive(link) ? "text-gray-500 font-bold" : ""}`}
+              onClick={() => setIsMenuOpen(false)} // Close menu when navigating
+            >
+              {text}
             </NavLink>
-            <NavLink to="/about" className="py-2 block">
-              About Us
-            </NavLink>
-          </div>
+          )}
         </div>
-      )}
+      ))}
+    </div>
+  </div>
+)}
+
+
+
+
+
     </div>
   );
 };
