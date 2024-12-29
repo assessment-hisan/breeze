@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mx-center {
+  @apply max-w-[96rem] mx-auto
+}
+
+.flex-center {
+  @apply flex justify-center items-center
+}
