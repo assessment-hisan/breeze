@@ -22,7 +22,8 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative w-auto overflow-x-hidden h-[500px] md:h-auto max-w-[120rem] mx-auto">
+    <>
+    <section className="relative  overflow-hidden h-auto  max-w-[120rem] mx-auto">
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index} className="w-full h-full relative">
@@ -43,7 +44,53 @@ const Hero = () => {
         <p className="text-lg md:text-2xl">Discover the latest trends and offers.</p>
       </div> */}
     </section>
+    <ThreeBoxesSection/>
+    </>
+    
   );
 }
 
 export default Hero
+
+const ThreeBoxesSection = () => {
+  const boxes = [
+    {
+      title: 'Box 1',
+      description: 'Description for Box 1. Highlight key details here.',
+      image: "images/three.webp",
+      link: '#',
+    },
+    {
+      title: 'Box 2',
+      description: 'Description for Box 2. Highlight key details here.',
+      image: "images/three.webp",
+      link: '#',
+    },
+    {
+      title: 'Box 3',
+      description: 'Description for Box 3. Highlight key details here.',
+      image: "images/three.webp",
+      link: '#',
+    },
+  ];
+
+  return (
+    <div className="max-w-[120rem] mx-auto px-2 py-8">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+        {boxes.slice(0, window.innerWidth < 1024 ? 2 : 3).map((box, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <img src={box.image} alt={box.title} className="w-full object-cover" />
+         
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
+
+
