@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Section 1: Logo and About */}
         <div>
-          <h2 className="text-lg font-bold mb-4">Brand Name</h2>
+          <h2 className="text-lg font-bold mb-4 uppercase">world Breeze</h2>
           <p className="text-sm">
             Discover the latest collections and enjoy the best shopping experience. Quality and style, all in one place.
           </p>
@@ -42,10 +42,10 @@ const Footer = () => {
               <span>Email: </span>
               <a href="mailto:info@example.com" className="hover:underline">info@example.com</a>
             </li>
-            <li>
+            {/* <li>
               <span>Location: </span>
               123 Main Street, City, Country
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -71,7 +71,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
-        <p>© 2024 Brand Name. All Rights Reserved.</p>
+        <p>© 2024 world Breeze. All Rights Reserved.</p>
       </div>
     </footer>
   );
