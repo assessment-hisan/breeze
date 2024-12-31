@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -16,16 +16,16 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/" className="hover:underline">Home</Link>
+              <NavLink to="/" className="hover:underline">Home</NavLink>
             </li>
             <li>
-              <Link href="/about" className="hover:underline">About Us</Link>
+              <NavLink to="/about" className="hover:underline">About Us</NavLink>
             </li>
             <li>
-              <a href="/brands" className="hover:underline">Brands</a>
+              <NavLink to="/brands" className="hover:underline">Brands</NavLink>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">Contact Us</a>
+              <NavLink to="/contact" className="hover:underline">Contact Us</NavLink>
             </li>
           </ul>
         </div>
