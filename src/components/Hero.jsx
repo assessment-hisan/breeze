@@ -23,14 +23,14 @@ const Hero = () => {
 
   return (
     <>
-    <section className="relative  overflow-hidden h-auto  max-w-[120rem] mx-auto">
+    <section className="relative  overflow-hidden h-full  max-w-[120rem] mx-auto">
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index} className="w-full h-full relative">
             <img
               src={src}
               alt={`Hero Slide ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover "
             />
           </div>
         ))}
@@ -75,12 +75,12 @@ const ThreeBoxesSection = () => {
   ];
 
   return (
-    <div className="max-w-[120rem] mx-auto px-2 py-8">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="max-w-[120rem] mx-auto px-2 py-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         {boxes.slice(0, window.innerWidth < 1024 ? 2 : 3).map((box, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-lg"
+            className="bg-white shadow-md  overflow-hidden transform transition duration-300 hover:scale-95 hover:shadow-lg"
           >
             <img src={box.image} alt={box.title} className="w-full object-cover" />
          

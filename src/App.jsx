@@ -3,12 +3,11 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 
 import New from "./components/helo/New";
-import Brands from "./components/helo/Brands";
+import Brands from "./components/pages/Brands";
 
-import Contact from "./components/contact/Contact";
-import About from "./components/contact/About";
+import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
 
-import Hero from "./components/Hero"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +16,7 @@ function App() {
   return (
     <Router>
     <Navbar />
+    <div className="pt-20 md:pt-0">
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/brands" element={<Brands />} />
@@ -25,6 +25,7 @@ function App() {
     <Route path="/contact" element={<Contact />} />
     <Route path="/about" element={<About />} />
     </Routes>
+    </div>
     <Footer/>
     </Router>
   )
