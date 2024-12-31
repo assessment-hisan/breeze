@@ -1,9 +1,9 @@
 const TwoImageSection = () => {
     return (
       <div className="max-w-[120rem] mx-auto  py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 px-4">
           {/* Image 1 */}
-          <div className="relative">
+          <div className="relative ">
             <img
               src="adsection/ad.webp" // Replace with the actual image path
               alt="Image 1"

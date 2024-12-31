@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <>
-    <section className="relative  overflow-hidden h-full  max-w-[120rem] mx-auto">
+    <section className="relative  -z-20 overflow-hidden h-full  max-w-[120rem] mx-auto">
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index} className="w-full h-full relative">

@@ -13,7 +13,7 @@ const About = () => {
       <section className="max-w-[1200px] mx-auto py-12 px-4 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6">Who We Are</h2>
         <p className="text-lg text-gray-600 leading-relaxed">
-          At <span className="font-bold">Brand Name</span>, we are passionate about delivering high-quality products that blend
+          At <span className="font-bold">World Trading</span>, we are passionate about delivering high-quality products that blend
           style and comfort. Our mission is to provide an exceptional shopping experience with curated collections for every
           occasion. Founded with a vision to inspire confidence and creativity, we are here to redefine fashion for everyone.
         </p>
@@ -40,12 +40,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-12 px-4">
+      Team Section
+       {/* <section className="py-12 px-4">
         <div className="max-w-[1200px] mx-auto">
           <h3 className="text-3xl font-bold text-center mb-6">Meet Our Team</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Team Member 1 */}
+        
             <div className="text-center">
               <img
                 src="/images/team-member-1.jpg"
@@ -55,7 +55,7 @@ const About = () => {
               <h4 className="font-bold text-lg">John Doe</h4>
               <p className="text-sm text-gray-600">CEO & Founder</p>
             </div>
-            {/* Team Member 2 */}
+       
             <div className="text-center">
               <img
                 src="/images/team-member-2.jpg"
@@ -65,7 +65,7 @@ const About = () => {
               <h4 className="font-bold text-lg">Jane Smith</h4>
               <p className="text-sm text-gray-600">Creative Director</p>
             </div>
-            {/* Team Member 3 */}
+         
             <div className="text-center">
               <img
                 src="/images/team-member-3.jpg"
@@ -75,7 +75,7 @@ const About = () => {
               <h4 className="font-bold text-lg">Mike Johnson</h4>
               <p className="text-sm text-gray-600">Marketing Manager</p>
             </div>
-            {/* Team Member 4 */}
+         
             <div className="text-center">
               <img
                 src="/images/team-member-4.jpg"
@@ -87,7 +87,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>  */}
 
       {/* Footer Call-to-Action */}
       <section className="bg-gray-800 text-white py-12">

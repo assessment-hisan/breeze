@@ -2,11 +2,11 @@ import React from 'react'
 import Breadcrumb from '../ui/Breadcrumb '
 const Brands = () => {
   const images = [
-    {id : 1, src : "/brands/En-And-Cee.jpg"},
-    {id : 2, src : "/brands/Espanio.jpg"},
-    {id :3, src :"/brands/Maxwell.jpg"},
     {id :4, src : "/brands/Morris-Becker.jpg"},
+    {id : 2, src : "/brands/Espanio.jpg"},
+    {id : 1, src : "/brands/En-And-Cee.jpg"},
     {id:5, src : "/brands/Safty-Shoe.jpg"},
+    {id :3, src :"/brands/Maxwell.jpg"},
     {id : 6, src : "/brands/Walkers.jpg"}
   ]
   return (
