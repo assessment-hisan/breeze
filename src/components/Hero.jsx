@@ -74,12 +74,12 @@ const ThreeBoxesSection = () => {
   ];
 
   return (
-    <div className="max-w-[120rem] mx-auto px-2 py-4">
+    <div className="max-w-[120rem] mx-auto px-2 py-2">
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         {boxes.slice(0, window.innerWidth < 1024 ? 2 : 3).map((box, index) => (
           <div
             key={index}
-            className="bg-white shadow-md  overflow-hidden transform transition duration-300 hover:scale-95 hover:shadow-lg"
+            className="bg-white   overflow-hidden transform transition duration-300 hover:scale-95  p-2"
           >
             <img src={box.image} alt={box.title} className="w-full object-cover" />
          
