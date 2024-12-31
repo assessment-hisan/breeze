@@ -11,7 +11,7 @@ const nav = [
   { id: 4, text: "Men", dropdown: createDropdown("men") },
   { id: 5, text: "Kids", dropdown: createDropdown("kids") },
   { id: 6, text: "Students", dropdown: createDropdown("students") },
-  { id: 7, text: "Backpack", dropdown: createDropdown("backpack") },
+  
   { id: 8, text: "New Arrivals", dropdown: createDropdown("new-arrivals") },
 ];
 

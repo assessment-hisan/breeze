@@ -29,15 +29,15 @@ const Navbar = () => {
 
   return ( 
     <div className="border-b-2 border-black/50">
-      <div className="fixed md:relative w-full z-30 max-w-[120rem] mx-auto bg-white drop-shadow-sm  pr-4">
+      <div className="fixed md:relative w-full z-30 max-w-[120rem] mx-auto bg-white drop-shadow-sm  pl-3 pr-6">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div>
-          <img src="/Main Logo.png" alt="Logo" className="h-20" />
+          <img src="/Main Logo.png" alt="Logo" className="h-24 2xl:h-32" />
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex flex-wrap justify-center items-center gap-6 font-semibold text-lg">
+        <div className="hidden lg:flex flex-wrap justify-center items-center gap-6 font-semibold text-xl md:text-xl 2xl:text-3xl">
           {nav.map(({ id, text, dropdown }) => (
             <div
               key={id}
@@ -51,7 +51,7 @@ const Navbar = () => {
                   isActive(`/${text.toLowerCase()}`)
                     ? "text-gray-500 border-gray-500"
                     : "text-black border-transparent"
-                } hover:text-gray-500  hover:border-gray-500 border-b-2 transition-all`}
+                } hover:text-gray-500  hover:border-gray-500 border-b-4 transition-all`}
               >
                 {text}
                 {dropdown && <AiFillCaretDown className="text-sm" />}
@@ -75,7 +75,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden lg:flex items-center justify-center px-4 py-2  space-x-3">
+        <div className="hidden lg:flex items-center justify-center py-2  space-x-3 text-xl">
             <NavLink to="/contact" className="py-2 block">
               Contact Us
             </NavLink>

@@ -5,7 +5,7 @@ const TwoImageSection = () => {
           {/* Image 1 */}
           <div className="relative ">
             <img
-              src="adsection/ad.webp" // Replace with the actual image path
+              src="/adsection/ad2.jpg" // Replace with the actual image path
               alt="Image 1"
               className="w-full h-full object-cover "
             />
@@ -14,7 +14,7 @@ const TwoImageSection = () => {
           {/* Image 2 */}
           <div className="relative">
             <img
-              src="adsection/ad.webp" // Replace with the actual image path
+              src="/adsection/ad1.jpg" // Replace with the actual image path
               alt="Image 2"
               className="w-full h-full object-cover "
             />
