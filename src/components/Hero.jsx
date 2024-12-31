@@ -15,10 +15,9 @@ const Hero = () => {
     autoplaySpeed: 3000, // Set the interval in milliseconds (3 seconds)
   };
   const images = [
-    "/images/c1.jpg",
-    "/images/c2.webp",
-    "/images/c1.jpg",
-    "/images/c2.webp",
+    "/hero/Morris-Becker-.jpg",
+    "/hero/Safty.jpg",
+    "/hero/Walkers (1).jpg"
   ];
 
   return (
@@ -57,19 +56,19 @@ const ThreeBoxesSection = () => {
     {
       title: 'Box 1',
       description: 'Description for Box 1. Highlight key details here.',
-      image: "images/three.webp",
+      image: "hero/three.webp",
       link: '#',
     },
     {
       title: 'Box 2',
       description: 'Description for Box 2. Highlight key details here.',
-      image: "images/three.webp",
+      image: "hero/three.webp",
       link: '#',
     },
     {
       title: 'Box 3',
       description: 'Description for Box 3. Highlight key details here.',
-      image: "images/three.webp",
+      image: "hero/three.webp",
       link: '#',
     },
   ];

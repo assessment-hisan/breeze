@@ -29,11 +29,11 @@ const Navbar = () => {
 
   return ( 
     <div className="border-b-2 border-black/50">
-      <div className="fixed md:relative w-full z-30 max-w-[120rem] mx-auto bg-white drop-shadow-sm ">
-      <div className="flex justify-between items-center p-4">
+      <div className="fixed md:relative w-full z-30 max-w-[120rem] mx-auto bg-white drop-shadow-sm  ">
+      <div className="flex justify-between items-center">
         {/* Logo */}
         <div>
-          <img src="/logo.png" alt="Logo" className="h-14" />
+          <img src="/Main Logo.png" alt="Logo" className="h-20" />
         </div>
 
         {/* Desktop Navigation */}
