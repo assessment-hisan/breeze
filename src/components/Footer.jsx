@@ -66,14 +66,14 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
           <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/mnclogos/wtap.svg" alt="whatsapp" className="h-8 w-8 hover:opacity-75" />
+              <img src="/mnclogos/wtap.svg" alt="whatsapp" className="h-8 w-8 hover:opacity-75" />
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/mnclogos/fb.svg" alt="Facebook" className="h-8 w-8 hover:opacity-75" />
+              <img src="/mnclogos/fb.svg" alt="Facebook" className="h-8 w-8 hover:opacity-75" />
             </a>
             
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/mnclogos/insta.svg" alt="Instagram" className="h-9 w-9 hover:opacity-75" />
+              <img src="/mnclogos/insta.svg" alt="Instagram" className="h-9 w-9 hover:opacity-75" />
             </a>
       
           </div>
