@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="bg-gray-50 text-gray-800">
+    <div className="bg-gray-200 text-gray-800">
       {/* Hero Section */}
       <section
         className="hidden md:relative bg-cover bg-center h-[100px] md:h-[400px]"
@@ -27,7 +27,7 @@ const About = () => {
           C.R. 1157409, RO Box: 328, Postal Code: 124, Muscat, Sultanate of Oman, Mob: 92308022, Tel: 26779709
         </p>
         <p className="text-lg text-gray-600 mt-4">
-          Email: <a href="mailto:worldbreezeinti@gmail.com" className="text-blue-500">worldbreezeinti@gmail.com</a>, 
+          Email: <a href="mailto:worldbreezeintl@gmail.com" className="text-blue-500">worldbreezeintl@gmail.com</a>, 
         </p>
       </section>
 
@@ -83,7 +83,7 @@ const About = () => {
 </section>
 
       {/* Footer Call-to-Action */}
-      <section className="bg-gray-800 text-white py-12">
+      <section className="bg-gray-200 text-black py-12">
         <div className="max-w-[1200px] mx-auto text-center">
           <h3 className="text-3xl font-bold mb-6">Join Our Community</h3>
           <p className="text-lg mb-6">
@@ -91,7 +91,7 @@ const About = () => {
           </p>
           <a
             href="/contact"
-            className="px-6 py-3 bg-primary hover:bg-primary-dark rounded-lg text-white font-bold"
+            className="px-6 py-3 bg-primary hover:bg-primary/70 transition-all rounded-lg text-white font-bold"
           >
             Contact Us
           </a>

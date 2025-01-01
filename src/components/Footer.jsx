@@ -2,11 +2,14 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-zinc-950 text-white py-8">
       <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Section 1: Logo and About */}
         <div>
+          <div className="flex items-center gap-2">
+            <img src="/favicon.png" alt="" className="w-14 h-14 "/>
           <h2 className="text-lg font-bold mb-4 uppercase ">World Breeze International L.L.C</h2>
+          </div>
           <p className="text-sm">
             Discover high-quality footwear, undergarments, and baby products. Your trusted partner in style, comfort, and quality.
           </p>
@@ -45,7 +48,7 @@ const Footer = () => {
             </li>
             <li>
               <span>Email: </span>
-              <a href="mailto:worldbreezeinti@gmail.com" className="hover:underline">worldbreezeinti@gmail.com</a>
+              <a href="mailto:worldbreezeintl@gmail.com" className="hover:underline">worldbreezeintl@gmail.com</a>
             </li>
             <li>
               <span>Address: </span>

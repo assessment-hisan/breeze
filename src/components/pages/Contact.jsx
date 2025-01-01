@@ -6,7 +6,10 @@ const Contact = () => {
       <div className="w-full max-w-4xl bg-white shadow-md rounded-md grid grid-cols-1 md:grid-cols-2">
         {/* Left Section: Company Details */}
         <div className="hidden md:block p-6">
-          <h2 className="text-2xl font-poppins font-semibold mb-4">WORLD BREEZE INTERNATIONAL L.L.C</h2>
+          <div className='flex item-center gap-2 h-14 mb-6'>
+            <img src="/favicon.png" alt="" />
+          <h2 className="text-[1.4rem] font-poppins font-semibold mb-4">WORLD BREEZE INTERNATIONAL L.L.C</h2>
+          </div>
           <p className=" text-base  font-semibold mb-2">رونق النسيم العالمية ش.م.م</p>
           <p className="text-base  font-semibold mb-4">FOOTWEAR | UNDER GARMENTS | BABY PRODUCTS</p>
           <div className="hidden md:block text-sm text-gray-700 space-y-2">
@@ -36,10 +39,10 @@ const Contact = () => {
             <p>
               Email:{" "}
               <a
-                href="mailto:worldbreezeinti@gmail.com"
+                href="mailto:worldbreezeintl@gmail.com"
                 className="font-semibold "
               >
-                worldbreezeinti@gmail.com
+                worldbreezeintl@gmail.com
               </a>
             </p>
           </div>

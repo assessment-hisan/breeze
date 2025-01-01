@@ -8,7 +8,7 @@ const Section = ({title, products, }) => {
       {products.map((product, index) => (
         <div
           key={index}
-          className="bg-white shadow-md rounded-sm overflow-hidden transform transition delay-200 duration-300 hover:scale-95"
+          className="bg-white shadow-md rounded-lg overflow-hidden transform transition delay-200 duration-300 hover:scale-95"
         >
           <img
             src={product.image}
@@ -17,7 +17,7 @@ const Section = ({title, products, }) => {
           />
           <div className="p-4 text-center">
             <h3 className="text-base font-medium">{product.title}</h3>
-            <p className="text-xl text-zinc-900 font-bold">{product.price}</p>
+            {/* <p className="text-xl text-zinc-900 font-bold">{product.price}</p> */}
           </div>
         </div>
       ))}
