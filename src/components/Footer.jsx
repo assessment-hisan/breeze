@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Section 1: Logo and About */}
         <div>
-          <h2 className="text-lg font-bold mb-4 uppercase">World Breeze International L.L.C</h2>
+          <h2 className="text-lg font-bold mb-4 uppercase ">World Breeze International L.L.C</h2>
           <p className="text-sm">
             Discover high-quality footwear, undergarments, and baby products. Your trusted partner in style, comfort, and quality.
           </p>

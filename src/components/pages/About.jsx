@@ -5,12 +5,12 @@ const About = () => {
     <div className="bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center h-[400px]"
+        className="hidden md:relative bg-cover bg-center h-[100px] md:h-[400px]"
         style={{ backgroundImage: 'url("/images/about-hero.jpg")' }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-0 md:bg-opacity-50"></div>
         <div className="relative max-w-[1200px] mx-auto h-full flex items-center justify-center px-4 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white">About Us</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold text-black md:text-white">About Us</h1>
         </div>
       </section>
 

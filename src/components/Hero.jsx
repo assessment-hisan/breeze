@@ -72,18 +72,21 @@ const ThreeBoxesSection = () => {
       description: "Description for Box 1. Highlight key details here.",
       image: "/three/2.jpg",
       link: "#",
+      class : ""
     },
     {
       title: "Box 2",
       description: "Description for Box 2. Highlight key details here.",
       image: "/three/1.jpg",
       link: "#",
+      class : ""
     },
     {
       title: "Box 3",
       description: "Description for Box 3. Highlight key details here.",
       image: "/three/3.jpg",
       link: "#",
+      class : "hidden md:block"
     },
   ];
 
@@ -98,7 +101,7 @@ const ThreeBoxesSection = () => {
             <img
               src={box.image}
               alt={box.title}
-              className="w-full object-cover"
+              className={`w-full object-cover ${box.class}`}
             />
           </div>
         ))}

@@ -96,8 +96,8 @@ const Navbar = () => {
       {isMenuOpen && (
   <div className="absolute top-0 left-0 w-full h-full bg-white shadow-lg  flex flex-col transition-transform">
     {/* Header */}
-    <div className="bg-white flex justify-between items-center p-4 border-b">
-      <img src="/logo.png" alt="Logo" className="h-12" />
+    <div className="bg-white flex justify-between items-center pr-4 border-b">
+      <img src="/Main Logo.png" alt="Logo" className="h-24 w-56" />
       <button onClick={() => setIsMenuOpen(false)}>
         <FaTimes size={24} />
       </button>

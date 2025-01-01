@@ -9,6 +9,7 @@ import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <Router>
     <Navbar />
     <div className="pt-20 md:pt-0">
+      <ScrollToTop/>
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/brands" element={<Brands />} />
