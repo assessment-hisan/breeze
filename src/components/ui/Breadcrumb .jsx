@@ -6,7 +6,7 @@ const Breadcrumb = ({page}) => {
 
   return (
     <div className=" py-4  border-b-2 border-black/50 mb-3 ">
-      <div className="max-w-[120rem] mx-auto flex justify-between items-center text-sm text-gray-600 px-4">
+      <div className="max-w-[96rem] mx-auto flex justify-between items-center text-sm text-gray-600 px-4">
       <div className="text-3xl md:text-4xl font-bold text-black">
         {page}
       </div>

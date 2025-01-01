@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section = ({title, products, }) => {
   return (
-    <div className="max-w-[120rem] mx-auto px-4 py-8">
+    <div className="max-w-[96rem] mx-auto px-4 py-8">
     <h2 className="text-3xl font-semibold text-center mb-6">{title}</h2>
     <div className="pt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
       {products.map((product, index) => (

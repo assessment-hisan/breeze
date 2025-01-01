@@ -14,7 +14,7 @@ const Brands = () => {
       <div>
        <Breadcrumb page={"Our Brands"}/>
       </div>
-       <div className='max-w-[120rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-12 px-4'>
+       <div className='max-w-[96rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-12 px-4'>
        {images.map(({id, src})=>(
           <img key={id} src={src} alt="" srcset=""  />
         ))}

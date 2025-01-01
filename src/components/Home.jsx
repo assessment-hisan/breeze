@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import Section from './ui/Section'
 
-import products from '../utilis/featured.js'
+import products from '../utilis/products.js'
 import TwoImageSection from './ui/TwoImageSection.jsx'
 const Home = () => {
   return (

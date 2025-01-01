@@ -1,6 +1,6 @@
 const TwoImageSection = () => {
     return (
-      <div className="max-w-[120rem] mx-auto  py-8">
+      <div className="max-w-[96rem] mx-auto  py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 px-4">
           {/* Image 1 */}
           <div className="relative ">

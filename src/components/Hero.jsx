@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative overflow-hidden h-full max-w-[120rem] mx-auto">
+      <section className="relative overflow-hidden h-full max-w-[96rem] mx-auto">
         <Slider {...settings}>
           {images.map((src, index) => (
             <div key={index} className="w-full h-full relative">
@@ -88,7 +88,7 @@ const ThreeBoxesSection = () => {
   ];
 
   return (
-    <div className="max-w-[120rem] mx-auto px-2 py-2">
+    <div className="max-w-[96rem] mx-auto px-2 py-2">
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         {boxes.map((box, index) => (
           <div

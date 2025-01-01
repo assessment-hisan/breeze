@@ -28,16 +28,16 @@ const Navbar = () => {
   };
 
   return ( 
-    <div className="border-b-2 border-black/50">
-      <div className="fixed md:relative w-full z-30 max-w-[120rem] mx-auto bg-white drop-shadow-sm  pl-3 pr-6">
+    <div className="border-b-2 border-black/50 font-poppins">
+      <div className="fixed md:relative w-full z-30 max-w-[96rem] mx-auto bg-white drop-shadow-sm  pl-3 pr-6">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div>
-          <img src="/Main Logo.png" alt="Logo" className="h-24 2xl:h-32" />
+          <img src="/Main Logo.png" alt="Logo" className="h-24 w-56" />
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex flex-wrap justify-center items-center gap-6 font-semibold text-xl md:text-xl 2xl:text-3xl">
+        <div className="hidden lg:flex flex-wrap justify-center items-center gap-6 font-medium text-xl md:text-xl">
           {nav.map(({ id, text, dropdown }) => (
             <div
               key={id}
@@ -47,7 +47,7 @@ const Navbar = () => {
             >
               <NavLink
                 to={text === "Home" ? "/" : `/${text.toLowerCase()}`}
-                className={`flex items-center gap-1 py-1 ${
+                className={`flex items-center gap-1 py-1 uppercase ${
                   isActive(`/${text.toLowerCase()}`)
                     ? "text-gray-500 border-gray-500"
                     : "text-black border-transparent"
@@ -75,11 +75,11 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden lg:flex items-center justify-center py-2  space-x-3 text-xl">
-            <NavLink to="/contact" className="py-2 block">
+        <div className="hidden lg:flex items-center justify-center py-2   text-lg">
+            <NavLink to="/contact" className="py-2 block border-r-2 pr-1">
               Contact Us
             </NavLink>
-            <NavLink to="/about" className="py-2 block">
+            <NavLink to="/about" className="py-2 block pl-1">
               About Us
             </NavLink>
           </div>
