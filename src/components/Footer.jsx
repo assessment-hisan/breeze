@@ -62,18 +62,17 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/facebook.svg" alt="Facebook" className="h-6 w-6 hover:opacity-75" />
+          <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="src/assets/mnclogos/wtap.svg" alt="whatsapp" className="h-8 w-8 hover:opacity-75" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/twitter.svg" alt="Twitter" className="h-6 w-6 hover:opacity-75" />
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="src/assets/mnclogos/fb.svg" alt="Facebook" className="h-8 w-8 hover:opacity-75" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/instagram.svg" alt="Instagram" className="h-6 w-6 hover:opacity-75" />
+            
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="src/assets/mnclogos/insta.svg" alt="Instagram" className="h-9 w-9 hover:opacity-75" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <img src="/icons/linkedin.svg" alt="LinkedIn" className="h-6 w-6 hover:opacity-75" />
-            </a>
+      
           </div>
         </div>
       </div>

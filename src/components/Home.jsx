@@ -14,7 +14,7 @@ const Home = () => {
 
       <section>
         <div className='w-full flex flex-col justify-center items-center  my-12'>
-          <h1 className='text-5xl font-bold text-center'>Our Brands</h1>
+          <h1 className='text-3xl md:text-5xl font-bold text-center'>Our Brands</h1>
           <div className='mt-5 '>
             <img src="/Logos-Photo.jpg" alt=""  />
           </div>
