@@ -17,15 +17,13 @@ const About = () => {
       {/* Company Details Section */}
       <section className="max-w-[96rem] mx-auto py-12 px-4 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6"> World Breeze International L.L.C</h2>
-        <p className="text-lg text-gray-600 leading-relaxed">
-          رونق النسيم العالمية ش.م.م <br />
-          <strong>WORLD BREEZE INTERNATIONAL L.L.C</strong>
-        </p>
-        <p className="text-lg text-gray-600 mt-4">
+       
+        <p className="text-lg text-gray-600 mt-2 mb-6">
           <strong>FOOTWEAR | UNDER GARMENTS | BABY PRODUCTS</strong>
         </p>
+        {/* ست ١٥٧٤٩ صب ٠ ٣٢٨ الرمز البريدي : ١٢٤ مسقط، سلطنة عمان، نقال : ۹۷۳۸۳۲، هاتف : ۲۱۷۷۹۷۰۹ <br /> */}
         <p className="text-lg text-gray-600 mt-4">
-          ست ١٥٧٤٩ صب ٠ ٣٢٨ الرمز البريدي : ١٢٤ مسقط، سلطنة عمان، نقال : ۹۷۳۸۳۲، هاتف : ۲۱۷۷۹۷۰۹ <br />
+          
           C.R. 1157409, RO Box: 328, Postal Code: 124, Muscat, Sultanate of Oman, Mob: 92308022, Tel: 26779709
         </p>
         <p className="text-lg text-gray-600 mt-4">

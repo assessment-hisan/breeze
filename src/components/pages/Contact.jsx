@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+    <div className="py-14 md:h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="w-full max-w-4xl bg-white shadow-md rounded-md grid grid-cols-1 md:grid-cols-2">
         {/* Left Section: Company Details */}
         <div className="hidden md:block p-6">
