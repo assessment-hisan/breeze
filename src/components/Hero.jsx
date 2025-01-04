@@ -37,10 +37,12 @@ const Hero = () => {
   };
 
   const images = [
+    "/hero/Maxwell-Vest.jpg",
     "/hero/Morris-Becker-.jpg",
     "/hero/Safty.jpg",
     "/hero/Walkers (1).jpg",
     "/hero/slide4.jpg",
+    
   ];
 
   return (
