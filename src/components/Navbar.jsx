@@ -32,9 +32,11 @@ const Navbar = () => {
       <div className="fixed md:relative w-full z-30 max-w-[96rem] mx-auto bg-white drop-shadow-sm  pl-3 pr-6">
       <div className="flex justify-between items-center">
         {/* Logo */}
+        <NavLink to={"/"}>
         <div>
           <img src="/Main Logo.png" alt="Logo" className="h-24 w-56" />
         </div>
+        </NavLink>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex flex-wrap justify-center items-center gap-6 font-medium text-xl md:text-xl">
